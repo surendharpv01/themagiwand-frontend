@@ -1,157 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Magi Wand – Coming Soon</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    /* Reset & base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2e2e4d);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Magi Wand – Coming Soon</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset & base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: linear-gradient(135deg, #1e1e2f, #2e2e4d);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
 
-    .container {
-      max-width: 700px;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 3rem;
-      border-radius: 16px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.3);
-      backdrop-filter: blur(10px);
-    }
+      .container {
+        max-width: 700px;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 3rem;
+        border-radius: 16px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+      }
 
-    .logo {
-      font-family: 'Unica One', cursive;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ffd369;
-    }
+      .logo {
+        font-family: "Unica One", cursive;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #ffd369;
+      }
 
-    .headline {
-      font-size: 1.8rem;
-      margin: 1rem 0;
-      color: #ffffff;
-    }
+      .headline {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        color: #ffffff;
+      }
 
-    .subtext {
-      font-size: 1rem;
-      color: #dcdcdc;
-      margin-bottom: 2rem;
-    }
+      .subtext {
+        font-size: 1rem;
+        color: #dcdcdc;
+        margin-bottom: 2rem;
+      }
 
-    .highlights {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 2rem;
-    }
-    .highlights li {
-      background: #333356;
-      padding: 0.6rem 1.2rem;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      color: #ffd369;
-    }
+      .highlights {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      .highlights li {
+        background: #333356;
+        padding: 0.6rem 1.2rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        color: #ffd369;
+      }
 
-    .coming-soon {
-      font-size: 1rem;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-      color: #ffffff;
-    }
+      .coming-soon {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #ffffff;
+      }
 
-    .waitlist-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .waitlist-form input {
-      padding: 0.8rem 1rem;
-      border: none;
-      border-radius: 8px;
-      outline: none;
-      font-size: 1rem;
-    }
-    .waitlist-form button {
-      background-color: #ffd369;
-      color: #1e1e2f;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .waitlist-form button:hover {
-      background-color: #ffc107;
-    }
+      .media-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #ffffff;
+      }
 
-    .socials {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .socials a {
-      color: #ffd369;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .socials a:hover {
-      text-decoration: underline;
-    }
+      .waitlist-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+      .waitlist-form input {
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        font-size: 1rem;
+      }
+      .waitlist-form button {
+        background-color: #ffd369;
+        color: #1e1e2f;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .waitlist-form button:hover {
+        background-color: #ffc107;
+      }
 
-    footer {
-      font-size: 0.85rem;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="logo">🔮 The Magi Wand</div>
-    <h1 class="headline">Creativity is About to Get Magical</h1>
-    <p class="subtext">We’re crafting a vibrant space where designers connect, create, and cast powerful ideas into the world.</p>
+      .socials {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .socials a {
+        color: #ffd369;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .socials a:hover {
+        text-decoration: underline;
+      }
 
-    <ul class="highlights">
-      <li>✨ Workshops</li>
-      <li>🎨 Collaborations</li>
-      <li>🌐 Meetups</li>
-      <li>🧙 Mentorship</li>
-      <li>🔥 Pure Design Magic</li>
-    </ul>
+      footer {
+        font-size: 0.85rem;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🔮 The Magi Wand</div>
+      <h1 class="headline">Creativity is About to Get Magical</h1>
+      <p class="subtext">
+        We’re crafting a vibrant space where designers connect, create, and cast
+        powerful ideas into the world.
+      </p>
 
-    <div class="coming-soon">🚀 Launching Soon in Bangalore</div>
+      <ul class="highlights">
+        <li>✨ Workshops</li>
+        <li>🎨 Collaborations</li>
+        <li>🌐 Meetups</li>
+        <li>🧙 Mentorship</li>
+        <li>🔥 Pure Design Magic</li>
+      </ul>
 
-    <form class="waitlist-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Join the Waitlist</button>
-    </form>
+      <div class="coming-soon">🚀 Launching Soon in Bangalore</div>
 
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Discord</a>
+      <div class="media-title">
+        🤝 To join as a volunteer or become a sponsor, contact us at:
+      </div>
+
+      <div class="socials">
+        <a href="https://wa.me/+919087525572" target="_blank">
+          <img
+            src="assets/whatsapp_icon.webp"
+            alt="Instagram Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@themagiwand.com" target="_blank">
+          <img
+            src="assets/gmail_icon.png"
+            alt="Instagram Icon"
+            width="36"
+            height="30"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="assets/new_linkedin.png"
+            alt="Instagram Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="assets/Instagram_icon.svg"
+            alt="Instagram Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="assets/new_fb.png"
+            alt="Instagram Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+      </div>
+
+      <footer>✨ Where design meets destiny ✨</footer>
     </div>
-
-    <footer>✨ Where design meets destiny ✨</footer>
-  </div>
-</body>
+  </body>
 </html>
